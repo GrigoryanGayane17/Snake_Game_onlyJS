@@ -93,6 +93,12 @@ const moveSnake = () => {
         alert(`Your Score is ${score}`)
         window.location.reload()
     }
+
+    if (state.body.some(seg => seg.x === newHead.x && seg.y === newHead.y)) {
+        alert('game over !')
+        alert(`Your Score is ${score}`)
+        window.location.reload()
+    }
 }
 
 const load = () => {
