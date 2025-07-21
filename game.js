@@ -119,7 +119,6 @@ const load = () => {
             moveSnake()
         }, 150)
         buttonField.style.display = "none";
-        textsField.style.display = "block";
 
     }
 
